@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://obtpln4q4cqb"]
+
+[ext_resource type="Texture2D" uid="uid://dhhb2rjo2uey3" path="res://tiles05-Sheet.png" id="1_i7s6n"]
+[ext_resource type="Script" uid="uid://ccexifet8q5j5" path="res://background.gd" id="2_i7s6n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phnu8"]
+atlas = ExtResource("1_i7s6n")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14hd8"]
+bg_color = Color(0.94509804, 0.5411765, 0.43137255, 1)
+border_color = Color(0, 0, 0, 0)
+
+[node name="Background" type="TextureRect" unique_id=1753377273]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 10.0
+offset_bottom = -4.0
+texture = SubResource("AtlasTexture_phnu8")
+script = ExtResource("2_i7s6n")
+
+[node name="Button" type="Button" parent="." unique_id=516918702]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 182.0
+offset_right = 796.0
+offset_bottom = 249.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_14hd8")
+text = "Press any button"
+
+[node name="Titolo" type="RichTextLabel" parent="." unique_id=1238059551]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 18.0
+offset_right = 970.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "FafnirWare
+"
+scroll_active = false
+horizontal_alignment = 1
