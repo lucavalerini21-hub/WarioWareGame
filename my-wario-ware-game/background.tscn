@@ -22,10 +22,10 @@ script = ExtResource("2_i7s6n")
 
 [node name="Button" type="Button" parent="." unique_id=516918702]
 layout_mode = 0
-offset_left = 377.0
-offset_top = 182.0
-offset_right = 796.0
-offset_bottom = 249.0
+offset_left = 472.0
+offset_top = 259.0
+offset_right = 891.0
+offset_bottom = 326.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 48
@@ -34,10 +34,10 @@ text = "Press any button"
 
 [node name="Titolo" type="RichTextLabel" parent="." unique_id=1238059551]
 layout_mode = 0
-offset_left = 268.0
-offset_top = 18.0
-offset_right = 970.0
-offset_bottom = 146.0
+offset_left = 152.0
+offset_top = 19.0
+offset_right = 854.0
+offset_bottom = 147.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 40
 theme_override_font_sizes/normal_font_size = 108

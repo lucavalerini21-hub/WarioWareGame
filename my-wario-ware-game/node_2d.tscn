@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dru45sntg2lih"]
+
+[ext_resource type="Script" uid="uid://bn60oe0qx5fj0" path="res://node_2d.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://caeq52cx4wsjs" path="res://circles06-Sheet.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bv43onphib1wa" path="res://Cassonetto.png" id="2_0e48y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xehqc"]
+atlas = SubResource("AtlasTexture_0e48y")
+
+[node name="Level_scene" type="Node2D" unique_id=2031120569]
+script = ExtResource("1_epypp")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1866479750]
+offset_right = 1024.0
+offset_bottom = 256.0
+texture = SubResource("AtlasTexture_xehqc")
+
+[node name="Hearth container" type="HBoxContainer" parent="." unique_id=658195152]
+offset_left = 327.0
+offset_top = 4.0
+offset_right = 663.0
+offset_bottom = 71.0
+
+[node name="Trashbin1" type="TextureRect" parent="Hearth container" unique_id=1384603957]
+layout_mode = 2
+texture = ExtResource("2_0e48y")
+
+[node name="Trashbin2" type="TextureRect" parent="Hearth container" unique_id=373577828]
+layout_mode = 2
+texture = ExtResource("2_0e48y")
+
+[node name="Trashbin3" type="TextureRect" parent="Hearth container" unique_id=1937687264]
+layout_mode = 2
+texture = ExtResource("2_0e48y")
+
+[node name="Trashbin4" type="TextureRect" parent="Hearth container" unique_id=510534381]
+layout_mode = 2
+texture = ExtResource("2_0e48y")
+
+[node name="Trashbin5" type="TextureRect" parent="Hearth container" unique_id=1253076604]
+layout_mode = 2
+texture = ExtResource("2_0e48y")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=716147979]
+offset_left = 9.0
+offset_top = -5.0
+offset_right = 177.0
+offset_bottom = 47.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/normal_font_size = 42
+text = "LEVEL 1"
+scroll_active = false
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=967711387]
+offset_left = 943.0
+offset_top = -2.0
+offset_right = 1008.0
+offset_bottom = 62.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/normal_font_size = 42
+text = "0:0"
+scroll_active = false

@@ -14,6 +14,10 @@ config/name="MyWarioWareGame"
 run/main_scene="uid://obtpln4q4cqb"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
+[autoload]
+
+Global="*uid://b3hvqb3qic871"
+
 [display]
 
 window/stretch/mode="viewport"
